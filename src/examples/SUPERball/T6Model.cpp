@@ -103,7 +103,7 @@ T6Model::~T6Model()
 void T6Model::addNodes(tgStructure& s)
 {
     const double half_length = c.rod_length / 2;
-
+         // -7.5, -8.42, 0
     s.addNode(-c.rod_space,  -half_length, 0);            // 0
     s.addNode(-c.rod_space,   half_length, 0);            // 1
     s.addNode( c.rod_space,  -half_length, 0);            // 2
@@ -150,7 +150,7 @@ void T6Model::addActuators(tgStructure& s)
     s.addPair(3, 9,  "muscle");
     s.addPair(3, 11, "muscle");
 
-    s.addPair(4, 2,  "muscle");
+    // s.addPair(4, 2,  "muscle");
     s.addPair(4, 10, "muscle");
     s.addPair(4, 11, "muscle");
 
